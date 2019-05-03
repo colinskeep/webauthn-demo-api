@@ -30,7 +30,6 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'static')));
 
 app.use('/', defaultroutes)
-app.use('/password', passwordauth)
 app.use('/webauthn', webuathnauth)
 
 const port = config.port || 3000;
